@@ -190,7 +190,7 @@ class ControlWindow(Gtk.Window):
 
         bar = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
         self.toggle = Gtk.CheckButton(label="Filter enabled")
-        self.toggle.set_active(True)
+        self.toggle.set_active(False)
         self.toggle.connect("toggled", lambda *a: on_change())
         bar.pack_start(self.toggle, False, False, 0)
         reset = Gtk.Button(label="Reset to default")
